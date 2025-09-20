@@ -77,6 +77,12 @@ export class Random implements INodeType {
 				const min = this.getNodeParameter('min', i, 1) as number;
 				const max = this.getNodeParameter('max', i, 100) as number;
 
+				// Validação básica: min e max devem ser inteiros
+				if (!Number.isInteger(min) || !Number.isInteger(max)) {
+					throw new NodeOperationError(this.getNode(), 'Os valores de "Min" e "Max" devem ser números inteiros (sem decimais)', {
+						itemIndex: i,
+					});
+				}
 				// Validação básica: min não pode ser maior que max
 				if (min > max) {
 					throw new NodeOperationError(this.getNode(), 'O valor de "Min" não pode ser maior que o valor de "Max"', {
