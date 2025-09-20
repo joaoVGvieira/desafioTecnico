@@ -46,7 +46,9 @@ cd desafioTecnico
 
 ### 2. Instalar as Dependências
 
-Este comando lê o arquivo `package.json` e instala todas as ferramentas necessárias para o desenvolvimento, como o TypeScript e as bibliotecas base do n8n.
+Este comando lê o arquivo `package.json` e instala todas as ferramentas necessárias para o desenvolvimento, como o TypeScript e as bibliotecas base do n8n.  
+
+> **Observação:** Caso apareça algum aviso ou erro durante a instalação, **pode ignorar** e seguir para o próximo passo. Isso **não compromete** a execução do desafio.
 
 ```bash
 npm install
