@@ -89,7 +89,7 @@ O container do n8n está configurado para carregar automaticamente o node custom
 
 ```
 Editor is now accessible via: http://localhost:5678
-```
+
 ### 5. Testando
 Após o container do n8n iniciar, abra seu navegador no endereço: `http://localhost:5678`.
 
@@ -103,7 +103,7 @@ Siga os passos abaixo para testar o node.
 4.  Clique no node para adicioná-lo ao canvas.
 5.  Configure os campos `Min` e `Max` (ex: `Min: 1` e `Max: 100`).
 6.  Clique em **Execute Step**.
-7.  Verifique o resultado na aba **Output** — deverá conter o JSON com o número aleatório (ex: `{"randomNumber": 42, "min": 1, "max": 100}`).
+7.  Verifique o resultado na aba **Output** deverá conter o JSON com o número aleatório (ex: `{"randomNumber": 42, "min": 1, "max": 100}`).
 
 **b) Teste de Validações (Tratamento de Erros)**
 
