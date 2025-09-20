@@ -2,12 +2,6 @@
   <img src="./assets/Random.png" alt="Logo" width="150">
 </div>
 
-
-<div align="center">
- <img src="./assets/demo-random.gif" alt="Demonstração do Node Random em Ação" width="700">
-</div>
-
-
 # Desafio n8n: Node Customizado "Random"
 
 Este projeto é uma solução para o desafio tecnico de criar um conector (node) personalizado. O node se chama `Random` e gera um número aleatório "verdadeiro" (True Random) utilizando a API`random.org`.
@@ -20,6 +14,10 @@ Este projeto é uma solução para o desafio tecnico de criar um conector (node)
 * **Operação:** `True Random Number Generator`
 * **Inputs:** `Min` (mínimo, inclusivo) e `Max` (máximo, inclusivo).
 * **Output:** Retorna um JSON com o número aleatório gerado, e os valores de `min` e `max` utilizados na requisição.
+
+<div align="center">
+ <img src="./assets/demo-random.gif" alt="Demonstração do Node Random em Ação" width="700">
+</div>
 
 Exemplo de saída:
 
