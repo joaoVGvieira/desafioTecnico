@@ -2,7 +2,11 @@
   <img src="./assets/Random.png" alt="Logo" width="150">
 </div>
 
-<img src="./assets/demo-random.gif" alt="Demonstração do Node Random em Ação" width="700">
+
+<div align="center">
+ <img src="./assets/demo-random.gif" alt="Demonstração do Node Random em Ação" width="700">
+</div>
+
 
 # Desafio n8n: Node Customizado "Random"
 
