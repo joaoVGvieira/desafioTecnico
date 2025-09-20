@@ -102,7 +102,7 @@ Siga os passos abaixo para testar o node.
 3.  Na barra de busca, digite `Random`.
 4.  Clique no node para adicioná-lo ao canvas.
 5.  Configure os campos `Min` e `Max` (ex: `Min: 1` e `Max: 100`).
-6.  Clique em **Execute Node** (o botão de play no painel do node).
+6.  Clique em **Execute Step**.
 7.  Verifique o resultado na aba **Output** — deverá conter o JSON com o número aleatório (ex: `{"randomNumber": 42, "min": 1, "max": 100}`).
 
 **b) Teste de Validações (Tratamento de Erros)**
@@ -111,12 +111,12 @@ O node também foi programado para capturar erros de input. Você pode testar:
 
 **Teste 1: Números Decimais**
 1.  No campo `Min`, digite um número decimal (ex: `1.5`).
-2.  Clique em **Execute Node**.
+2.  Clique em **Execute Step**.
 3.  Verifique se o node falha e exibe a mensagem de erro correta: `Os valores de "Min" e "Max" devem ser números inteiros (sem decimais)`.
 
 **Teste 2: Mínimo Maior que Máximo**
 1.  Configure os campos com `Min: 100` e `Max: 1`.
-2.  Clique em **Execute Node**.
+2.  Clique em **Execute Step**.
 3.  Verifique se o node falha e exibe a mensagem de erro correta: `O valor de "Min" não pode ser maior que o valor de "Max"`.
 
 ---
