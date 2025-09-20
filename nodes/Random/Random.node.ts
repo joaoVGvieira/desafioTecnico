@@ -4,7 +4,7 @@ import {
 	INodeType,
 	INodeTypeDescription,
 	NodeConnectionType,
-	NodeOperationError, // <-- ADICIONA ESSE
+	NodeOperationError, 
 } from 'n8n-workflow';
 
 export class Random implements INodeType {
@@ -30,10 +30,9 @@ export class Random implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						// Exatamente como pedido no desafio
 						name: 'True Random Number Generator',
 						value: 'trueRandom',
-						action: 'Gera um n mero aleat rio',
+						action: 'Gera um numero aleatorio',
 					},
 				],
 				default: 'trueRandom',
@@ -99,11 +98,11 @@ export class Random implements INodeType {
 				const response = await this.helpers.httpRequest({
 					method: 'GET',
 					url: url,
-					qs: options, // 'qs' é para query string
+					qs: options, // 'qs' eh para query string
 				});
 
 				// A API retorna o número como string, tipo "42\n".
-				// usei .toString() para garantir que é string (caso venha como Buffer)
+				// usei .toString() para garantir que eh string (caso venha como Buffer)
 				// usei .trim() para tirar espaços/quebras de linha
 				// e parseInt para transformar em número
 				const randomNumber = parseInt(response.toString().trim(), 10);

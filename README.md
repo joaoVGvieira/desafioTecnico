@@ -2,9 +2,11 @@
   <img src="./assets/Random.png" alt="Logo" width="150">
 </div>
 
+<img src="./assets/demo-random.gif" alt="Demonstração do Node Random em Ação" width="700">
+
 # Desafio n8n: Node Customizado "Random"
 
-Este projeto é uma solução para o desafio de criar um conector (node) personalizado. O node se chama `Random` e gera um número aleatório "verdadeiro" (True Random) utilizando a API`random.org`.
+Este projeto é uma solução para o desafio tecnico de criar um conector (node) personalizado. O node se chama `Random` e gera um número aleatório "verdadeiro" (True Random) utilizando a API`random.org`.
 
 ---
 
@@ -56,8 +58,6 @@ Este comando lê o arquivo `package.json` e instala todas as ferramentas necess�
 ```bash
 npm install
 ```
-
-> Dica: se você usar `npm` pela primeira vez no projeto, aguarde até a conclusão do download dos pacotes(Demora um pouquinho).
 
 ### 3. Compilar o Node
 
