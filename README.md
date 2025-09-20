@@ -89,7 +89,6 @@ O container do n8n está configurado para carregar automaticamente o node custom
 
 ```
 Editor is now accessible via: http://localhost:5678
-
 ```
 ### 5. Testando
 Após o container do n8n iniciar, abra seu navegador no endereço: `http://localhost:5678`.
