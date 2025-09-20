@@ -103,6 +103,6 @@ Após o container do n8n iniciar, abra seu navegador no endereço: `http://local
 4. Clique no node para adicioná-lo ao canvas.
 5. Configure os campos `Min` e `Max` (ex: 1 e 100).
 6. Clique em **Execute Node** (o botão de play no painel do node).
-7. Verifique o resultado na aba **Output** — deverá conter o JSON com o número aleatório.
+7. Verifique o resultado na aba **Output** deverá conter o JSON com o número aleatório.
 
 ---
