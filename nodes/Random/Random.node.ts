@@ -11,7 +11,7 @@ export class Random implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Random',
 		name: 'random',
-		icon: 'file:Random.svg',
+		icon: 'file:RandomV2.svg',
 		group: ['helpers'], // Grupo "helpers" (ajudantes) faz sentido
 		version: 1,
 		subtitle: '=True Random Number Generator',

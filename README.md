@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="./assets/Random.png" alt="Logo" width="150">
+</div>
 
 # Desafio n8n: Node Customizado "Random"
 
@@ -30,7 +33,7 @@ Para rodar este projeto localmente, é necessário ter as seguintes ferramentas 
 
 * [Node.js](https://nodejs.org/) 
 * [NPM](https://www.npmjs.com/) 
-* [Docker](https://www.docker.com/products/docker-desktop/) e [Docker Compose](https://docs.docker.com/compose/) (Docker Desktop deve estar em execução)
+* [Docker](https://www.docker.com/products/docker-desktop/) e [Docker Compose](https://docs.docker.com/compose/)
 ---
 
 ## Como Instalar e Rodar Localmente
@@ -89,6 +92,8 @@ Editor is now accessible via: http://localhost:5678
 ### 5. Testando
 
 Após o container do n8n iniciar, abra seu navegador no endereço: `http://localhost:5678`.
+
+> **Observação:** Se for a primeira vez que você está usando o n8n, será solicitado criar uma conta de usuário.
 
 1. Crie um novo workflow (`New workflow`).
 2. Clique no `+` para adicionar um node.
