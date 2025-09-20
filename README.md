@@ -8,6 +8,15 @@ Este projeto é uma solução para o desafio tecnico de criar um conector (node)
 
 ---
 
+## Índice
+
+- [Funcionalidades](#funcionalidades)
+- [Pré-requisitos](#pré-requisitos)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Instalar e Rodar Localmente](#como-instalar-e-rodar-localmente)
+- [Testando](#testando)
+
+
 ## Funcionalidades
 
 * **Node:** `Random`
@@ -40,7 +49,32 @@ Para rodar este projeto localmente, é necessário ter as seguintes ferramentas 
 * [Docker](https://www.docker.com/products/docker-desktop/) e [Docker Compose](https://docs.docker.com/compose/)
 ---
 
+
+## Estrutura do Projeto
+
+```text
+├── assets/                 # Contém o logo e o GIF para o README
+├── dist/                   # Pasta com o código JavaScript compilado (o que o n8n usa)
+├── nodes/
+│   └── Random/
+│       ├── Random.node.ts  # O código-fonte principal do node (TypeScript)
+│       └── RandomV2.svg    # O ícone SVG do node
+├── .eslintrc.js            # Configuração do Linter (qualidade de código)
+├── .gitignore              # Arquivos ignorados pelo Git
+├── docker-compose.yml      # Arquivo da infra (n8n + Postgres)
+├── gulpfile.js             # Script para automatizar a build dos ícones
+├── package.json            # Dependências e scripts (npm install, npm run build)
+├── README.md               # O arquivo que você está lendo
+└── tsconfig.json           # Configurações do TypeScript
+```
+
 ## Como Instalar e Rodar Localmente
+
+> **Nota sobre a Configuração:** Para facilitar os testes deste desafio e permitir que o projeto seja executado com um único comando (`docker-compose up`), optei por:
+> 1.  Configurar as variáveis (como a senha do banco) diretamente no `docker-compose.yml`.
+> 2.  Desativar a tela de login do n8n (via `N8N_BASIC_AUTH_ACTIVE: "false"`).
+>
+> Em um ambiente de produção real, essas chaves sensíveis estariam protegidas em um arquivo `.env` e a autenticação estaria ativa.
 
 Siga os passos abaixo para testar o node em uma instância local do n8n.
 
@@ -90,7 +124,7 @@ O container do n8n está configurado para carregar automaticamente o node custom
 ```
 Editor is now accessible via: http://localhost:5678
 ```
-### 5. Testando
+## 5. Testando
 Após o container do n8n iniciar, abra seu navegador no endereço: `http://localhost:5678`.
 
 Siga os passos abaixo para testar o node.
@@ -120,3 +154,10 @@ O node também foi programado para capturar erros de input. Você pode testar:
 3.  Verifique se o node falha e exibe a mensagem de erro correta: `O valor de "Min" não pode ser maior que o valor de "Max"`.
 
 ---
+
+## Autor
+
+Feito por **João Vitor Gonçalves Vieira**
+
+* **LinkedIn:** `www.linkedin.com/in/joao-vg-vieira`
+* **GitHub:** `https://github.com/joaoVGvieira`
