@@ -95,8 +95,6 @@ Editor is now accessible via: http://localhost:5678
 
 Após o container do n8n iniciar, abra seu navegador no endereço: `http://localhost:5678`.
 
-> **Observação:** Se for a primeira vez que você está usando o n8n, será solicitado criar uma conta de usuário.
-
 1. Crie um novo workflow (`New workflow`).
 2. Clique no `+` para adicionar um node.
 3. Na barra de busca, digite `Random`.
