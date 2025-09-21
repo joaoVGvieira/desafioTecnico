@@ -112,13 +112,6 @@ Este comando utiliza o `docker-compose.yml` para iniciar os containers do n8n e 
 ```bash
 docker-compose up
 ```
-
-Se preferir rodar em background (detached mode):
-
-```bash
-docker-compose up -d
-```
-
 O container do n8n está configurado para carregar automaticamente o node customizado que está na pasta `dist` (através de um volume mapeado). Aguarde até ver a mensagem nos logs indicando que o editor está disponível:
 
 ```
