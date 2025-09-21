@@ -11,6 +11,7 @@ Este projeto é uma solução para o desafio tecnico de criar um conector (node)
 ## Índice
 
 - [Funcionalidades](#funcionalidades)
+- [Características Técnicas](#características-técnicas)
 - [Pré-requisitos](#pré-requisitos)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Como Instalar e Rodar Localmente](#como-instalar-e-rodar-localmente)
@@ -39,6 +40,15 @@ Exemplo de saída:
 ```
 
 ---
+## Características Técnicas
+
+  * **Node.js:** Versão 20.15+ 
+  * **TypeScript:** Sim, com tipagem completa do n8n-workflow.
+  * **API n8n:** `n8nNodesApiVersion 1`
+  * **Ambiente:** Docker e Docker Compose com `postgres:14` e `n8nio/n8n:latest`.
+  * **Ícone:** SVG personalizado (`RandomV2.svg`).
+  * **Validação:** O nó valida se os inputs são inteiros e se `Min` não é maior que `Max`.
+
 
 ## Pré-requisitos
 
