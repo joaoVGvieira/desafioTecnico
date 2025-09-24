@@ -85,7 +85,7 @@ Para rodar este projeto localmente, é necessário ter as seguintes ferramentas 
 > 1.  Configurar as variáveis (como a senha do banco) diretamente no `docker-compose.yml`.
 > 2.  Desativar a tela de login do n8n (via `N8N_BASIC_AUTH_ACTIVE: "false"`).
 >
-> Em um ambiente de produção real, essas chaves sensíveis estariam protegidas em um arquivo `.env` e a autenticação estaria ativa.
+> ⚠️ Em um ambiente de produção real, essas chaves sensíveis estariam protegidas em um arquivo `.env` e a autenticação estaria ativa.
 
 Siga os passos abaixo para testar o node em uma instância local do n8n.
 
@@ -100,7 +100,7 @@ cd desafioTecnico
 
 Este comando lê o arquivo `package.json` e instala todas as ferramentas necessárias para o desenvolvimento, como o TypeScript e as bibliotecas base do n8n.  
 
-> **Observação:** Caso apareça algum aviso ou erro durante a instalação, **pode ignorar** e seguir para o próximo passo. Isso **não compromete** a execução do desafio.
+> **Observação:** 🚨 Caso apareça algum aviso ou erro durante a instalação, **pode ignorar** e seguir para o próximo passo. Isso **não compromete** a execução do desafio.
 
 ```bash
 npm install
@@ -119,7 +119,8 @@ Esse comando executa o script `build` definido no `package.json` e gera os artef
 ### 4. Rodar o Ambiente Docker (n8n + Postgres)
 
 Este comando utiliza o `docker-compose.yml` para iniciar os containers do n8n e do banco de dados Postgres. 
-OBS:(Lembrar de deixar docker ativo!!!)
+
+⚠️ Lembre-se de deixar o Docker Desktop em execução antes de rodar o comando abaixo!!!
 ```bash
 docker-compose up
 ```
