@@ -16,7 +16,8 @@ Este projeto é uma solução para o desafio tecnico de criar um conector (node)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Como Instalar e Rodar Localmente](#como-instalar-e-rodar-localmente)
 - [Testando](#testando)
-
+- [Detalhes da Implementação](#detalhes-da-implementação)
+- [Considerações](#considerações)
 
 ## Funcionalidades
 
@@ -157,10 +158,53 @@ O node também foi programado para capturar erros de input. Você pode testar:
 3.  Verifique se o node falha e exibe a mensagem de erro correta: `O valor de "Min" não pode ser maior que o valor de "Max"`.
 
 ---
+## Detalhes da Implementação
+
+Para garantir que o n8n reconheça este pacote como um nó customizado, as seguintes configurações foram feitas:
+
+**1. `package.json`:**
+A chave `n8n` informa ao n8n onde encontrar os arquivos de nó compilados.
+
+```json
+{
+  "n8n": {
+    "nodes": [
+      "dist/nodes/Random/Random.node.js"
+    ],
+    "n8nNodesApiVersion": 1
+  }
+}
+```
+
+**2. `Random.node.ts`:**
+O objeto `description` define todos os parâmetros, nomes e ícone do nó, conforme solicitado no desafio.
+
+```typescript
+export class Random implements INodeType {
+  description: INodeTypeDescription = {
+    displayName: 'Random',
+    name: 'random',
+    icon: 'file:RandomV2.svg',
+    group: ['helpers'],
+    version: 1,
+    subtitle: '=True Random Number Generator',
+    description: 'Gera um número aleatório usando a API do Random.org',
+    // ...
+  };
+}
+```
+
+-----
+
+## Considerações
+
+  * **Rate Limiting:** A API Random.org é gratuita, mas possui limites de uso. Para aplicações de alto volume, pode ser necessário um tratamento adicional.
+  * **Conectividade:** Este nó depende de uma conexão com a internet para funcionar.
+
 
 ## Autor
 
 Feito por **João Vitor Gonçalves Vieira**
 
-* **LinkedIn:** `www.linkedin.com/in/joao-vg-vieira`
-* **GitHub:** `https://github.com/joaoVGvieira`
+* **LinkedIn:** [www.linkedin.com/in/joao-vg-vieira](https://www.linkedin.com/in/joao-vg-vieira)
+* **GitHub:** [https://github.com/joaoVGvieira](https://github.com/joaoVGvieira)
