@@ -118,8 +118,8 @@ Esse comando executa o script `build` definido no `package.json` e gera os artef
 
 ### 4. Rodar o Ambiente Docker (n8n + Postgres)
 
-Este comando utiliza o `docker-compose.yml` para iniciar os containers do n8n e do banco de dados Postgres.
-
+Este comando utiliza o `docker-compose.yml` para iniciar os containers do n8n e do banco de dados Postgres. 
+OBS:(Lembrar de deixar docker ativo!!!)
 ```bash
 docker-compose up
 ```
